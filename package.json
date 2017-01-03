@@ -18,6 +18,7 @@
   "homepage": "https://github.com/dbuxton/zazu-fx#readme",
   "dependencies": {
     "mathjs": "^3.2.1",
-    "numeral": "^1.5.3"
+    "numeral": "^1.5.3",
+    "request": "^2.79.0"
   }
 }
