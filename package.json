@@ -1,21 +1,21 @@
 {
-  "name": "zazu-calculator",
+  "name": "zazu-fx",
   "version": "1.0.0",
-  "description": "A calculator plugin for Zazu.",
-  "main": "calculator.js",
+  "description": "A FX plugin for Zazu.",
+  "main": "fx.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/tinytacoteam/zazu-calculator.git"
+    "url": "git+https://github.com/dbuxton/zazu-fx.git"
   },
-  "author": "Blaine Schmeisser",
+  "author": "David Buxton",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/tinytacoteam/zazu-calculator/issues"
+    "url": "https://github.com/dbuxton/zazu-fx/issues"
   },
-  "homepage": "https://github.com/tinytacoteam/zazu-calculator#readme",
+  "homepage": "https://github.com/dbuxton/zazu-fx#readme",
   "dependencies": {
     "mathjs": "^3.2.1",
     "numeral": "^1.5.3"

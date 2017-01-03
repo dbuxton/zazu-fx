@@ -1,14 +1,14 @@
 {
-  "name": "Calculator",
+  "name": "FX",
   "version": "0.0.1",
-  "description": "Calculate stuff.",
+  "description": "Check FX rates.",
   "icon": "icon.png",
   "blocks": {
     "input": [
       {
         "id": "Service",
         "type": "RootScript",
-        "script": "calculator.js",
+        "script": "fx.js",
         "connections": [
           "Copy"
         ]

@@ -1,30 +1,24 @@
 ## Calculator
 
-A basic calculator plugin written for zazu.
+A basic FX plugin written for zazu.
 
 ## Usage
 
-Open Zazu and type in any math equation you can think of. Here are a few
-examples:
+Open Zazu and type in a currency number:
 
-* `13lb to oz`
-* `pi * 3`
-* `12 * 12`
+    $4 in GBP
+    1500 USD in £
 
 If you click on the result it will copy the result to your clipboard.
 
 ## Installing
 
-Add `tinytacoteam/zazu-calculator` inside of `plugins` block of your  `~/.zazurc.json` file.
+Add `dbuxton/zazu-fx` inside of `plugins` block of your  `~/.zazurc.json` file.
 
 ~~~ json
 {
   "plugins": [
-    "tinytacoteam/zazu-calculator"
+    "dbuxton/zazu-fx"
   ]
 }
 ~~~
-
-## Screenshots
-
-![calculator](./screenshot.png)
