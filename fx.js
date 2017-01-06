@@ -29,17 +29,18 @@ module.exports = (pluginContext) => {
             symbols: toCurrency
           }
         }
+        console.debug(parsed)
         request(uri, (error, response, body) => {
           const decoded = JSON.parse(body)
           const exchangeRate = decoded.rates[toCurrency]
-          const answer = mathjs.eval("${exchangeRate} * ${number}").toString()
+          const answer = (numeral(exchangeRate) * numeral(parsed)).toString()
           const value = answer.match(/[\d.]+/g).join('')
           const title = answer.replace(/\d+/, (v) => {
             return numeral(v).format('0,0')
           })
           resolve([
             {
-              icon: 'fa-calculator',
+              icon: 'fa-usd',
               title: title,
               subtitle: 'Select item to copy the value to the clipboard.',
               value: value,
