@@ -34,7 +34,6 @@ module.exports = (pluginContext) => {
           const decoded = JSON.parse(body)
           const exchangeRate = decoded.rates[toCurrency]
           const answer = (numeral(exchangeRate) * numeral(parsed)).toString()
-          const value = answer.match(/[\d.]+/g).join('')
           const title = answer.replace(/\d+/, (v) => {
             return numeral(v).format('0,0')
           })
